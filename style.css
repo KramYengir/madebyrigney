@@ -1,55 +1,64 @@
-@import url("https://fonts.googleapis.com/css2?family=Dhurjati&family=Hedvig+Letters+Serif:opsz@12..24&family=Josefin+Sans:wght@300&family=Noto+Sans+JP:wght@300&family=Nova+Square&family=Roboto:ital,wght@1,300&family=Rubik+Bubbles&family=Shizuru&family=Whisper&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dhurjati&family=Hedvig+Letters+Serif:opsz@12..24&family=Josefin+Sans:wght@300&family=Noto+Sans+JP:wght@300&family=Nova+Square&family=Roboto&family=Rubik+Bubbles&family=Shizuru&family=Whisper&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
 body {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)),
     url("peak-district.jpg");
   /* background-image: url("peak-district.jpg"); */
   background-position: center;
   background-size: cover;
   object-fit: cover;
 
-  display: grid;
-  place-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: aliceblue;
+  font-family: "Roboto", serif;
 }
 
 h1 {
-  color: white;
+  margin-top: 10%;
   text-align: center;
-  padding: 20px;
-  margin-top: -20%;
-  animation: switchFont 15s ease-in-out infinite alternate;
 }
 
-@keyframes switchFont {
-  from {
-    font-family: "Courier New", Courier, monospace;
-  }
-  20% {
-    font-family: "Dhurjati", serif;
-  }
-  30% {
-    font-family: "Hedvig Letters Serif", serif;
-  }
-  40% {
-    font-family: "Noto Sans JP", serif;
-  }
-  50% {
-    font-family: "Roboto", serif;
-  }
-  60% {
-    font-family: "Josefin Sans", sans-serif;
-  }
-  70% {
-    font-family: "Whisper", serif;
-  }
-  80% {
-    font-family: "Nova Square", serif;
-  }
-  90% {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  }
-  to {
-    font-family: "Shizuru", Tahoma, Geneva, Verdana, sans-serif;
-  }
+p {
+  text-align: center;
+  max-width: min(80vw, 600px);
+  padding: 20px;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  background-color: transparent;
+  color: aliceblue;
+  border: none;
+
+  margin-inline: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  font-size: 8rem;
+  color: #0093e2;
+}
+
+i:hover,
+i:focus {
+  color: aliceblue;
 }
