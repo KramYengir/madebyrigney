@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Dhurjati&family=Hedvig+Letters+Serif:opsz@12..24&family=Josefin+Sans:wght@300&family=Noto+Sans+JP:wght@300&family=Nova+Square&family=Roboto&family=Rubik+Bubbles&family=Shizuru&family=Whisper&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 :root {
-  --logo-color: rgba(3, 37, 48, 0.836);
+  --logo-color: rgba(28, 30, 39, 0.911);
 }
 
 *,
@@ -26,31 +26,29 @@ body {
   align-items: center;
 
   color: rgb(255, 255, 255);
-  font-family: "Roboto", serif;
+  font-family: "Poppins", serif;
+}
+
+.logo {
+  margin-top: 10%;
+  /* outline: 3px solid var(--logo-color); */
+  padding-inline: 0.5rem;
+  background-color: #172e4d42;
 }
 
 h1 {
-  padding: 0.5rem 0 0.5rem 0;
-  margin-top: 10%;
   text-align: center;
-  outline: 3px solid var(--logo-color);
-  border-radius: 10px;
-  background-color: var(--logo-color);
 
+  text-transform: uppercase;
   letter-spacing: 3px;
 }
 
 .rigney {
-  padding: 0.6rem;
-  background-color: var(--logo-color);
   border-radius: 10px 0 0 10px;
 }
 
 .made {
-  padding: 0.5rem;
   color: var(--logo-color);
-  background-color: #ffffffec;
-  border-radius: 0 10px 10px;
 }
 
 p {
